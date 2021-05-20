@@ -11,7 +11,7 @@ export default function Person({ person }) {
   return (
     <Row justify="center" gutter={32} style={{ margin: "1em", height: "auto" }}>
       <Col span={24} sm={8}>
-        <Image width="900" height="900" src={person.imageUrl} />
+        <Image loading="eager" width="900" height="900" src={person.imageUrl} />
         <Title level={3} style={{ textAlign: "center" }}>
           {person.name}
         </Title>
