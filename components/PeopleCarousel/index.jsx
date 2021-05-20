@@ -21,7 +21,12 @@ export default function PeopleCarousel({ people }) {
           size={45}
           onClick={() => carouselRef.current.prev()}
         />
-        <Carousel style={{ width: "70vw" }} draggable ref={carouselRef}>
+        <Carousel
+          style={{ width: "70vw" }}
+          draggable
+          ref={carouselRef}
+          dots={false}
+        >
           {people.map((e) => (
             <Person key={`person-${e.name}`} person={e} />
           ))}
