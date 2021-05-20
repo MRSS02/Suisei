@@ -12,7 +12,7 @@ export default function PeopleCarousel({ people }) {
 
   return (
     <>
-      <Title level={1} style={{ textAlign: "center", margin: "1em" }}>
+      <Title style={{ textAlign: "center", margin: "1em" }}>
         Personalidades
       </Title>
       <Row align="middle" wrap={false}>

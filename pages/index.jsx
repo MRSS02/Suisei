@@ -1,6 +1,8 @@
 import Head from "next/head";
-import PeopleCarousel from "../components/PeopleCarousel";
 import NavBar from "../components/NavBar";
+import PeopleCarousel from "../components/PeopleCarousel";
+import Video from "../components/Video";
+import Divider from "antd/lib/divider";
 import { people } from "../data";
 
 import { useEffect, useRef } from "react";
@@ -11,6 +13,8 @@ export default function Home() {
   const peopleRef = useRef();
   const textRef = useRef();
   const footerRef = useRef();
+
+  const dividerStyle = { borderColor: "#505050", width: 50 };
 
   useEffect(() => {
     topRef.current.scrollIntoView({
@@ -49,14 +53,13 @@ export default function Home() {
         <div ref={topRef}></div>
         <NavBar refs={refs} />
         <div ref={videoRef}>
-          <p>video</p>
-          <p>video</p>
-          <p>video</p>
-          <p>video</p>
+          <Video url="https://www.youtube.com/embed/2uXS20iWve4" />
         </div>
+        <Divider style={dividerStyle} />
         <div ref={peopleRef}>
           <PeopleCarousel people={people} />
         </div>
+        <Divider style={dividerStyle} />
         <div ref={textRef}>
           <p>texto</p>
           <p>texto</p>
