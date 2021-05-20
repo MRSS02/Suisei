@@ -7,7 +7,7 @@ import Typography from "antd/lib/typography";
 
 const { Title } = Typography;
 
-export default function PersonCarousel({ people }) {
+export default function PeopleCarousel({ people }) {
   const carouselRef = useRef();
 
   return (

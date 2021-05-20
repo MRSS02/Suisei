@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Carousel from "../components/Carousel";
+import PeopleCarousel from "../components/PeopleCarousel";
 import { people } from "../data";
 
 import { useRef } from "react";
@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <main>
         <div ref={peopleRef}></div>
-        <Carousel people={people} />
+        <PeopleCarousel people={people} />
       </main>
       <footer>
         <p>Romano Studios - 2021</p>
