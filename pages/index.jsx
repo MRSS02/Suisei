@@ -1,9 +1,22 @@
 import Head from "next/head";
-import Image from "next/image";
+import Carousel from "../components/Carousel";
+import { people } from "../data";
+
+import { useRef } from "react";
 
 export default function Home() {
+  const peopleRef = useRef();
+
   return (
-    <div>
+    <body
+      style={{
+        width: "100vw",
+        overflowX: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Head>
         <title>Hublive</title>
         <meta
@@ -13,15 +26,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Image
-          width="200"
-          height="267"
-          src="https://upload.wikimedia.org/wikipedia/en/a/a9/Hoshimachi_Suisei.png"
-        ></Image>
+        <div ref={peopleRef}></div>
+        <Carousel people={people} />
       </main>
       <footer>
         <p>Romano Studios - 2021</p>
       </footer>
-    </div>
+    </body>
   );
 }
