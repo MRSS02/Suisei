@@ -4,7 +4,7 @@ import PeopleCarousel from "../components/PeopleCarousel";
 import Video from "../components/Video";
 import Divider from "antd/lib/divider";
 import { people } from "../data";
-
+import Description from "./description";
 import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -56,47 +56,12 @@ export default function Home() {
           <Video url="https://www.youtube.com/embed/2uXS20iWve4" />
         </div>
         <Divider style={dividerStyle} />
+        <Description ref={textRef} />
+        <Divider style={dividerStyle} />
         <div ref={peopleRef}>
           <PeopleCarousel people={people} />
         </div>
-        <Divider style={dividerStyle} />
-        <div ref={textRef}>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-          <p>texto</p>
-        </div>
+
         <div ref={footerRef}>
           <p>footer</p>
         </div>
