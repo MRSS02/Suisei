@@ -56,8 +56,7 @@ export default function Home() {
           <Video url="https://www.youtube.com/embed/2uXS20iWve4" />
         </div>
         <Divider style={dividerStyle} />
-        <div ref={textRef}>
-        <div>
+        <div className="description" ref={textRef}>
           <p>
           Com o advento da internet, cada vez mais celebridades e famosos
           passaram a se expressar em meio virtual. No entanto, não apenas personidades
