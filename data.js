@@ -37,11 +37,15 @@ export const people = [
     url: "https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q",
   },
   {
-    name: "Nintendo Fan",
+    name: "NintendoFan",
     imageUrl:
       "https://yt3.ggpht.com/ytc/AAUvwngrz-qnW6ns8BktQqz9U-DnTd2LGdPPqZe8xlogHQ=s900-c-k-c0x00ffffff-no-rj",
     description:
-      "Canal brasileiro de análise de jogos, no qual a identidade do seu criador é completamente desconhecida.",
+      `Canal brasileiro de análise e comentário a respeito de jogos, em especial da empresa Nintendo.
+      Inicialmente iniciado como apenas um hobby, o canal ganhou uma certa popularidade de mais de 100 mil
+      inscrições; mas mesmo com a fama, o criador não revela nenhum dado pessoal, como nome, rosto,
+      ou qualquer outro meio que possa revelar sua identidade ou seu histórico à parte de suas produções
+      no youtube.`,
     platform: "Youtube",
     url: "https://www.youtube.com/channel/UC0ToKV1PGi9FYlP5g5iRIOw",
   },
