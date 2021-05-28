@@ -11,7 +11,7 @@ export default function PeopleCarousel({ people }) {
   const carouselRef = useRef();
 
   return (
-    <>
+    <div>
       <Title style={{ textAlign: "center", margin: "1em" }}>
         Personalidades
       </Title>
@@ -21,6 +21,7 @@ export default function PeopleCarousel({ people }) {
           size={45}
           onClick={() => carouselRef.current.prev()}
         />
+
         <Carousel
           style={{ width: "70vw" }}
           draggable
@@ -37,6 +38,6 @@ export default function PeopleCarousel({ people }) {
           onClick={() => carouselRef.current.next()}
         />
       </Row>
-    </>
+    </div>
   );
 }

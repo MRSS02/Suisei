@@ -84,8 +84,12 @@ export default function Home() {
           <PeopleCarousel people={people} />
         </div>
 
-        <div ref={footerRef}>
-          <p>footer</p>
+        <div ref={footerRef} className="credits">
+          <p>Projeto produzido por: <br />
+          Edson Gonzalez Júnior
+          João Victor Amorim
+          Mateus Romano Saback Santos
+          </p>
         </div>
       </main>
       <footer>
