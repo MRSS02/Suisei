@@ -10,7 +10,7 @@ export default function NavBar({ refs }) {
     });
   };
   return (
-    <Menu mode="horizontal">
+    <Menu mode="horizontal" className="navbar">
       {refs.map((item) => (
         <Menu.Item onClick={() => handleScroll(item.ref)}>
           {item.title}

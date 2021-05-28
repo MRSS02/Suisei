@@ -7,3 +7,16 @@
   margin-top: 20px;
   margin-left: 2vw;
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.topSection {
+  margin-top: 10vh;
+}

@@ -52,7 +52,7 @@ export default function Home() {
       <main>
         <div ref={topRef}></div>
         <NavBar refs={refs} />
-        <div ref={videoRef}>
+        <div className="topSection" ref={videoRef}>
           <Video url="https://www.youtube.com/embed/2uXS20iWve4" />
         </div>
         <Divider style={dividerStyle} />
