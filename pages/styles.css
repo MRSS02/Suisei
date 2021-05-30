@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap");
+
+h1.ant-typography,
+h2.ant-typography {
+  font-family: "Roboto Slab";
+}
+
+div.ant-typography,
+h3.ant-typography,
+h4.ant-typography,
+h5.ant-typography {
+  font-family: "Open Sans", sans-serif;
+}
+
 .description {
   margin-left: 10vw;
   margin-right: 10vw;
@@ -10,4 +25,16 @@
 
 .topSection {
   margin-top: 10vh;
+}
+
+.video-wrapper {
+  width: 50vw;
+  height: 28.125vw;
+}
+
+@media screen and (max-width: 800px) {
+  .video-wrapper {
+    width: 75vw;
+    height: 42.1875vw;
+  }
 }
