@@ -8,8 +8,9 @@ export default function Video({ url }) {
     <div
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <Title>Personalidades da internet:<br />
-      Quando o rosto não é mais necessário.</Title>
+      <Title style={{ textAlign: "center", margin: "1em" }}>
+        Personalidades da internet: Quando o rosto não é mais necessário.
+      </Title>
       <div style={{ width: "50vw", height: "28.125vw" }}>
         <iframe width="100%" height="100%" src={url} allowFullScreen></iframe>
       </div>
