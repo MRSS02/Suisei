@@ -3,18 +3,24 @@ import Typography from "antd/lib/typography";
 import Row from "antd/lib/row";
 import Col from "antd/lib/col";
 import Card from "antd/lib/card";
-import { useState } from "react";
 import Button from "antd/lib/button";
 
 const { Paragraph, Title } = Typography;
 
 export default function Person({ person }) {
-  const [buttonClassNames, setButtonClassNames] = useState([
-    "button",
-    "button-hover",
-  ]);
   return (
-    <Card style={{ borderRadius: 16, boxShadow: 10, margin: "1em" }}>
+    <Card
+      hoverable
+      style={{
+        background:
+          "linear-gradient(0deg, rgba(225,225,255,1) 0%, rgba(255,255,255,1) 100%)",
+        cursor: "default",
+        boxShadow: "100px, 100px, #000",
+        margin: "1em",
+        borderRadius: "16px",
+      }}
+      className="person-card"
+    >
       <Row
         justify="center"
         gutter={32}
@@ -46,11 +52,9 @@ export default function Person({ person }) {
             {person.description}
           </Paragraph>
           <Button
-            className={buttonClassNames}
+            style={{ borderRadius: 20 }}
             type="primary"
             size="large"
-            onMouseEnter={() => setButtonClassNames()}
-            onMouseLeave={() => setButtonClassNames([""])}
             onClick={() => (window.location.href = person.url)}
           >
             Saiba mais!
