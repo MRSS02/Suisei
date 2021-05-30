@@ -4,6 +4,8 @@
 h1.ant-typography,
 h2.ant-typography {
   font-family: "Roboto Slab";
+  letter-spacing: 0.1em;
+  color: #fff;
 }
 
 div.ant-typography,
@@ -11,10 +13,25 @@ h3.ant-typography,
 h4.ant-typography,
 h5.ant-typography {
   font-family: "Open Sans", sans-serif;
+  color: #fff;
 }
 
 body {
-  background-color: #f1f1f1;
+  background: linear-gradient(27deg, #202020 10px, transparent 10px) 0 10px,
+    linear-gradient(207deg, #202020 10px, transparent 10px) 15px 5px,
+    linear-gradient(27deg, #222 10px, transparent 10px) 5px 15px,
+    linear-gradient(207deg, #222 10px, transparent 10px) 15px 10px,
+    linear-gradient(90deg, #1b1b1b 15px, transparent 15px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-size: 20px 20px;
   width: 100vw;
   overflow-x: hidden;
   display: flex;

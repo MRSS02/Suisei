@@ -33,7 +33,7 @@ export default function Person({ person }) {
             height="900"
             src={person.imageUrl}
           />
-          <Title level={3} style={{ textAlign: "center" }}>
+          <Title level={3} style={{ textAlign: "center", color: "#000" }}>
             {person.name}
           </Title>
         </Col>
@@ -47,8 +47,17 @@ export default function Person({ person }) {
             height: "auto",
           }}
         >
-          <Title level={4}>Plataforma: {person.platform}</Title>
-          <Paragraph style={{ textAlign: "justify", height: "100%" }}>
+          <Title
+            level={4}
+            style={{
+              color: "#000",
+            }}
+          >
+            Plataforma: {person.platform}
+          </Title>
+          <Paragraph
+            style={{ textAlign: "justify", height: "100%", color: "#000" }}
+          >
             {person.description}
           </Paragraph>
           <Button

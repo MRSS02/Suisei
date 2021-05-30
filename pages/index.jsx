@@ -4,6 +4,7 @@ import Video from "../components/Video";
 import Divider from "antd/lib/divider";
 import { people } from "../data";
 import Description from "../components/Article";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const dividerStyle = { borderColor: "#505050" };
@@ -41,14 +42,9 @@ export default function Home() {
         <div style={{ width: "75vw" }}>
           <Divider style={dividerStyle} />
         </div>
-
-        {/* <p>
-            Projeto produzido por: <br />
-            Edson Gonzalez Júnior João Victor Amorim Mateus Romano Saback Santos
-          </p> */}
       </main>
       <footer>
-        <p>Romano Studios - 2021</p>
+        <Footer />
       </footer>
     </body>
   );

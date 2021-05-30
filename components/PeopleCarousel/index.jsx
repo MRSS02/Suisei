@@ -21,7 +21,7 @@ export default function PeopleCarousel({ people }) {
         <AiFillLeftCircle
           style={{
             cursor: "pointer",
-            color: hoverLeft ? "black" : "grey",
+            color: hoverLeft ? "white" : "grey",
             transition: "color 0.5s ease",
           }}
           onMouseOver={() => setHoverLeft(true)}
@@ -42,7 +42,7 @@ export default function PeopleCarousel({ people }) {
         <AiFillRightCircle
           style={{
             cursor: "pointer",
-            color: hoverRight ? "black" : "grey",
+            color: hoverRight ? "white" : "grey",
             transition: "color 0.5s ease",
           }}
           onMouseOver={() => setHoverRight(true)}
