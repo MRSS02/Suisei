@@ -13,10 +13,6 @@ export default function Home() {
       style={{
         backgroundColor: "#F1F1F1",
         width: "100vw",
-        overflowX: "hidden",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
       }}
     >
       <Head>
@@ -29,7 +25,6 @@ export default function Home() {
       </Head>
       <main
         style={{
-          backgroundColor: "#F1F1F1",
           width: "100vw",
           overflowX: "hidden",
           display: "flex",
