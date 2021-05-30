@@ -2,42 +2,61 @@ import Image from "next/image";
 import Typography from "antd/lib/typography";
 import Row from "antd/lib/row";
 import Col from "antd/lib/col";
-
+import Card from "antd/lib/card";
+import { useState } from "react";
 import Button from "antd/lib/button";
 
 const { Paragraph, Title } = Typography;
 
 export default function Person({ person }) {
+  const [buttonClassNames, setButtonClassNames] = useState([
+    "button",
+    "button-hover",
+  ]);
   return (
-    <Row justify="center" gutter={32} style={{ margin: "1em", height: "auto" }}>
-      <Col span={24} sm={8}>
-        <Image loading="eager" width="900" height="900" src={person.imageUrl} />
-        <Title level={3} style={{ textAlign: "center" }}>
-          {person.name}
-        </Title>
-      </Col>
-      <Col
-        span={24}
-        sm={16}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          height: "auto",
-        }}
+    <Card style={{ borderRadius: 16, boxShadow: 10, margin: "1em" }}>
+      <Row
+        justify="center"
+        gutter={32}
+        style={{ margin: "1em", height: "auto" }}
       >
-        <Title level={4}>Plataforma: {person.platform}</Title>
-        <Paragraph style={{ textAlign: "justify", height: "100%" }}>
-          {person.description}
-        </Paragraph>
-        <Button
-          style={{ alignSelf: "flex-end" }}
-          type="primary"
-          onClick={() => (window.location.href = person.url)}
+        <Col span={24} sm={8}>
+          <Image
+            loading="eager"
+            width="900"
+            height="900"
+            src={person.imageUrl}
+          />
+          <Title level={3} style={{ textAlign: "center" }}>
+            {person.name}
+          </Title>
+        </Col>
+        <Col
+          span={24}
+          sm={16}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "auto",
+          }}
         >
-          Saiba mais!
-        </Button>
-      </Col>
-    </Row>
+          <Title level={4}>Plataforma: {person.platform}</Title>
+          <Paragraph style={{ textAlign: "justify", height: "100%" }}>
+            {person.description}
+          </Paragraph>
+          <Button
+            className={buttonClassNames}
+            type="primary"
+            size="large"
+            onMouseEnter={() => setButtonClassNames()}
+            onMouseLeave={() => setButtonClassNames([""])}
+            onClick={() => (window.location.href = person.url)}
+          >
+            Saiba mais!
+          </Button>
+        </Col>
+      </Row>
+    </Card>
   );
 }

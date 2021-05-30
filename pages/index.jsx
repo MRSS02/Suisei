@@ -9,12 +9,7 @@ export default function Home() {
   const dividerStyle = { borderColor: "#505050" };
 
   return (
-    <body
-      style={{
-        backgroundColor: "#F1F1F1",
-        width: "100vw",
-      }}
-    >
+    <body>
       <Head>
         <title>Hublive</title>
         <meta
