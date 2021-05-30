@@ -25,9 +25,8 @@ export default function Home() {
 
   const refs = [
     { title: "Vídeo", ref: videoRef },
+    { title: "Sobre", ref: textRef },
     { title: "Pessoas", ref: peopleRef },
-    { title: "Texto", ref: textRef },
-    { title: "Sobre", ref: footerRef },
   ];
 
   return (
@@ -84,10 +83,10 @@ export default function Home() {
           <PeopleCarousel people={people} />
         </div>
 
-        <div ref={footerRef} className="credits">
-          <p>Projeto produzido por: <br />
-          Edson Gonzalez Júnior
-          João Victor Amorim
+        <div className="credits">
+          <p>Projeto produzido por:<br />
+          Edson Gonzalez Júnior<br />
+          João Victor Amorim<br />
           Mateus Romano Saback Santos
           </p>
         </div>
