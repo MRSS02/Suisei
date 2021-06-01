@@ -1,6 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap");
+
+h1.ant-typography,
+h2.ant-typography {
+  font-family: "Roboto Slab";
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+div.ant-typography,
+h3.ant-typography,
+h4.ant-typography,
+h5.ant-typography {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(27deg, #202020 10px, transparent 10px) 0 10px,
+    linear-gradient(207deg, #202020 10px, transparent 10px) 15px 5px,
+    linear-gradient(27deg, #222 10px, transparent 10px) 5px 15px,
+    linear-gradient(207deg, #222 10px, transparent 10px) 15px 10px,
+    linear-gradient(90deg, #1b1b1b 15px, transparent 15px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-size: 20px 20px;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .description {
-   margin-left: 10vw;
-   margin-right: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .credits {
@@ -8,16 +49,18 @@
   margin-left: 2vw;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1;
-  text-align: center;
-  overflow-x: hidden;
-}
-
 .topSection {
   margin-top: 10vh;
+}
+
+.video-wrapper {
+  width: 50vw;
+  height: 28.125vw;
+}
+
+@media screen and (max-width: 800px) {
+  .video-wrapper {
+    width: 75vw;
+    height: 42.1875vw;
+  }
 }

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 import Person from "../Person";
 import Carousel from "antd/lib/carousel";
@@ -9,6 +9,8 @@ const { Title } = Typography;
 
 export default function PeopleCarousel({ people }) {
   const carouselRef = useRef();
+  const [hoverLeft, setHoverLeft] = useState(false);
+  const [hoverRight, setHoverRight] = useState(false);
 
   return (
     <div>
@@ -17,11 +19,16 @@ export default function PeopleCarousel({ people }) {
       </Title>
       <Row align="middle" wrap={false}>
         <AiFillLeftCircle
-          color="grey"
+          style={{
+            cursor: "pointer",
+            color: hoverLeft ? "white" : "grey",
+            transition: "color 0.5s ease",
+          }}
+          onMouseOver={() => setHoverLeft(true)}
+          onMouseOut={() => setHoverLeft(false)}
           size={45}
           onClick={() => carouselRef.current.prev()}
         />
-
         <Carousel
           style={{ width: "70vw" }}
           draggable
@@ -33,7 +40,13 @@ export default function PeopleCarousel({ people }) {
           ))}
         </Carousel>
         <AiFillRightCircle
-          color="grey"
+          style={{
+            cursor: "pointer",
+            color: hoverRight ? "white" : "grey",
+            transition: "color 0.5s ease",
+          }}
+          onMouseOver={() => setHoverRight(true)}
+          onMouseOut={() => setHoverRight(false)}
           size={45}
           onClick={() => carouselRef.current.next()}
         />
