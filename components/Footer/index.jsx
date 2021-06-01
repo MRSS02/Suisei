@@ -14,6 +14,9 @@ export default function Footer() {
         Todas as imagens utilizadas estão disponíveis publicamente nos canais do
         youtube de cada personalidade mostrada.
       </Paragraph>
+      <Paragraph>
+       Referências: https://www.youtube.com/watch?v=GvYAVti8nbk
+      </Paragraph>
       <Paragraph strong style={{ textAlign: "center" }}>
         Romano Studios - 2021
       </Paragraph>

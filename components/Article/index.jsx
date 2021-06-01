@@ -35,6 +35,23 @@ export default function Description() {
         em questão seja reproduzido no avatar; assim, trazendo expressão facial
         para aquela personalidade sem que seu rosto real seja utilizado.
       </Paragraph>
+      <Paragraph style={{ textAlign: "justify" }}>
+        No entanto, há aspectos negativos no anonimarto de personalidades anônimas.
+        Em relação aos próprios criadores de conteúdo, nota-se que, apesar do
+        anonimato protegê-los de muitas ameaças virtuais; às vezes a ausência de uma
+        identidade pública pode levar ao efeito contrário, pois a busca por formas de
+        obter informações sobre tais indivíduos por pessoas mal-intencionadas acaba
+        por ser muito mais comum; e como tais personalidades prezam pelo anonimato,
+        as consequências de terem suas identidades descobertas pode ser bastante
+        severa. Já em relação aos espectadores; estes podem se tornar muito mais
+        apegados psicologicamente a tais personalidades virtuais; pois, justamente
+        devido à suspensão de descrença, cria-se uma ideal fantasioso em relação
+        às qualidades do influenciador digital, assim, aqueles que o assistem o
+        podem o tomar como exemplo absoluto a ser seguido, ou ainda, vê-los como
+        substitutos a amizades reais, criando-se assim uma relação parassocial
+        no qual muitos acreditam estar contruindo uma relação de proximidade com
+        tais personalidades ao mandarem mensagens no chat de <i>livestreams</i>      
+      </Paragraph>
     </div>
   );
 }
