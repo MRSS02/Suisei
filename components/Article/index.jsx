@@ -4,7 +4,7 @@ const { Paragraph, Title } = Typography;
 
 export default function Description() {
   return (
-    <div style={{ width: "80vw" }}>
+    <div style={{ width: "70vw" }}>
       <Title style={{ textAlign: "center", margin: "1em" }}>Tema</Title>
       <Paragraph style={{ textAlign: "justify" }}>
         &nbsp;&nbsp;&nbsp;&nbsp;Com o advento da internet, cada vez mais
