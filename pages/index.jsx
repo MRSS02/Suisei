@@ -28,7 +28,7 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <Video url="https://www.youtube.com/embed/2uXS20iWve4" />
+        <Video url="https://www.youtube.com/embed/DFhrgvGW3Ew" />
         <div style={{ width: "75vw" }}>
           <Divider style={dividerStyle} />
         </div>
