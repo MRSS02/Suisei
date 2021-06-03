@@ -15,7 +15,7 @@ export default function Footer() {
         youtube de cada personalidade mostrada.
       </Paragraph>
       <Paragraph style={{ textAlign: "center" }}>
-        <a href="https://www.youtube.com/playlist?list=PLzOa-x8wLX_Q1NyZ9lq2n3JWirdw14TMV">
+        <a href="https://drive.google.com/file/d/1v9bXwijsNzsi3OdPZBcKzzcCJ09HwDko/view?usp=sharing">
           Referências
         </a>
       </Paragraph>
